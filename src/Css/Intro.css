@@ -1,0 +1,23 @@
+.Intro {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lora", serif;
+  font-style: italic;
+}
+
+.Intro h4 {
+  width: 50%;
+}
+
+.Intro h1 {
+  font-size: 50px;
+  margin-bottom: 2%;
+}
+
+.Intro p {
+  color: rgb(158, 158, 158);
+  font-style: normal;
+}
