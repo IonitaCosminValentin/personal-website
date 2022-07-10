@@ -1,0 +1,44 @@
+@use "./Animations.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+.App {
+  color: white;
+  background-color: rgb(65, 65, 65);
+  height: 100vh;
+
+  .content {
+    background-color: rgb(35, 35, 35);
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.navigation {
+  position: absolute;
+  top: 81%;
+  right: 5%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgb(20, 20, 20);
+  width: 13%;
+  height: 15vh;
+
+  border: 2px solid rgb(98, 13, 255);
+  border-radius: 30px;
+
+  button {
+    font-weight: 300;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    border: none;
+    background-color: rgb(20, 20, 20);
+  }
+}

@@ -1,0 +1,88 @@
+@keyframes Animation0 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes Animation1 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes Animation2 {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes Animation3 {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes Animation4 {
+  0% {
+    transform: scale(20%);
+    rotate: 90deg y;
+  }
+}
+@keyframes Animation5 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes Animation6 {
+  0% {
+    font-size: 0;
+  }
+  100% {
+    font-size: 100%;
+  }
+}
+@keyframes Animation7 {
+  0% {
+    font-size: 0;
+  }
+  100% {
+    font-size: 100%;
+  }
+}
+@keyframes Animation8 {
+  0% {
+    font-size: 0;
+  }
+  100% {
+    font-size: 100%;
+  }
+}
+@keyframes Animation9 {
+  0% {
+    transform: translateX(200px) rotateY(70deg);
+  }
+  100% {
+    transform: translateY(0) rotateX(0deg);
+  }
+}
+@keyframes Animation10 {
+  0% {
+    transform: translateX(200px) rotateY(70deg);
+  }
+  100% {
+    transform: translateY(0) rotateX(0deg);
+  }
+}
