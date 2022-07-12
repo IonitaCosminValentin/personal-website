@@ -5,7 +5,7 @@ import About from "./Components/About";
 import Navigation from "./Components/Navigation";
 
 function App() {
-  const [pageId, setPageId] = useState(0);
+  const [pageId, setPageId] = useState(1);
   const pages = [<Intro />, <About />];
 
   const changePage = (id) => {

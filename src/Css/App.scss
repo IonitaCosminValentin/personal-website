@@ -1,24 +1,29 @@
-@use "./Animations.scss";
+@use "./variables";
+@use "./Animations";
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   user-select: none;
 }
-.App {
-  color: white;
+body {
   background-color: rgb(65, 65, 65);
-  height: 100vh;
+  color: white;
+}
 
+.App {
   .content {
+    display: flex;
     background-color: rgb(35, 35, 35);
+    justify-content: center;
     height: 100%;
     width: 100%;
   }
 }
 
 .navigation {
-  position: absolute;
+  position: fixed;
   top: 81%;
   right: 5%;
 
@@ -31,14 +36,47 @@
   width: 13%;
   height: 15vh;
 
-  border: 2px solid rgb(98, 13, 255);
+  border: 2px solid variables.$color-scheme;
   border-radius: 30px;
 
   button {
     font-weight: 300;
     font-size: 40px;
-    color: rgb(255, 255, 255);
+    color: rgb(148, 148, 148);
     border: none;
     background-color: rgb(20, 20, 20);
   }
+}
+
+.Intro {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lora", serif;
+  font-style: italic;
+
+  overflow: hidden;
+
+  h4 {
+    width: 50%;
+  }
+
+  h1 {
+    font-size: 50px;
+    margin-bottom: 2%;
+  }
+
+  p {
+    color: rgb(158, 158, 158);
+    font-style: normal;
+  }
+}
+
+.color-scheme {
+  color: variables.$color-scheme;
+}
+.indent {
+  text-indent: 10%;
 }

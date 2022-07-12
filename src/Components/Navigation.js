@@ -5,17 +5,17 @@ const Navigation = ({ changePage }) => {
     <div className="navigation">
       <button
         onClick={() => {
-          changePage(-1);
-        }}
-      >
-        {"<"}
-      </button>
-      <button
-        onClick={() => {
           changePage(1);
         }}
       >
         {">"}
+      </button>{" "}
+      <button
+        onClick={() => {
+          changePage(-1);
+        }}
+      >
+        {"<"}
       </button>
     </div>
   );
