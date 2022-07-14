@@ -1,7 +1,7 @@
 @use "./variables";
 
 .about {
-  width: 70%;
+  min-height: 100vh;
   font-family: "Lora", serif, cursive;
   color: rgb(221, 221, 221);
 
@@ -14,8 +14,7 @@
     color: rgb(221, 221, 221);
     text-align: justify;
   }
-  ul {
-    display: flex;
-    flex-direction: column;
+  .default {
+    text-align: start;
   }
 }

@@ -9,7 +9,7 @@ const Navigation = ({ changePage }) => {
         }}
       >
         {">"}
-      </button>{" "}
+      </button>
       <button
         onClick={() => {
           changePage(-1);

@@ -25,8 +25,12 @@ const About = () => {
       <span className="color-scheme">Country:</span> Romania
       <br />
       <br />
-      <span className="color-scheme">Adress:</span> Uliesti, Str. Plopilor, Nr
-      12
+      <span className="color-scheme">Phone:</span> +40721 732 718
+      <br />
+      <br />
+      <span className="color-scheme">Adress:</span>
+      <br />
+      Uliesti, Str. Plopilor, Nr 12
       <br />
       <br />
       <span className="color-scheme">Email:</span>
@@ -34,18 +38,22 @@ const About = () => {
       IonitaCosminValentin@gmail.com
       <br />
       <br />
-      <span className="color-scheme">Phone:</span> +40721 732 718
+      <span className="color-scheme">Values:</span>
+      <p className="default">
+        Loyality, Compassion, <br /> Kindness, Determination, Trustworthiness,
+        Appreciation.
+      </p>
+      <br />
+      <span className="color-scheme">Passions/Hobbies:</span>
+      <p className="default">
+        Coding, Reading,
+        <br />
+        Self-Improvment, Traveling,
+        <br />
+        Sports, Gaming.
+      </p>
       <br />
       <br />
-      <span className="color-scheme">Passions:</span>
-      <ul>
-        <li>Coding</li>
-        <li>Reading</li>
-        <li>Self-Improvment</li>
-        <li>Traveling</li>
-        <li>Gaming</li>
-        <li>Sports</li>
-      </ul>
     </div>
   );
 };
