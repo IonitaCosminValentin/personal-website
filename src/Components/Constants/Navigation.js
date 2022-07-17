@@ -5,14 +5,14 @@ const Navigation = ({ changePage }) => {
     <div className="navigation">
       <button
         onClick={() => {
-          changePage(1);
+          changePage("INCREMENT");
         }}
       >
         {">"}
       </button>
       <button
         onClick={() => {
-          changePage(-1);
+          changePage("DECREMENT");
         }}
       >
         {"<"}

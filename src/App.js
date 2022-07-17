@@ -8,16 +8,19 @@ import Burger from "./Components/Constants/Burger";
 import Resume from "./Components/Resume";
 
 function App() {
-  const [pageId, setPageId] = useState(1);
+  const [pageId, setPageId] = useState(0);
   const pages = [<Intro />, <About />, <Resume />];
 
-  const changePage = (id) => {
+  const changePage = (action) => {
+    if (action === "INCREMENT") {
+      if (pageId + 1 >= pages.length) return setPageId(0);
+      return setPageId(pageId + 1);
+    }
     if (pageId <= 0) {
       return setPageId(pages.length - 1);
     }
-    if (pageId + 1 >= pages.length) return setPageId(0);
 
-    return setPageId(pageId + id);
+    return setPageId(pageId - 1);
   };
 
   const selectAnimation = () => {
@@ -25,8 +28,8 @@ function App() {
   };
 
   const handlers = useSwipeable({
-    onSwipedLeft: () => changePage(-1),
-    onSwipedRight: () => changePage(1),
+    onSwipedLeft: () => changePage("INCREMENT"),
+    onSwipedRight: () => changePage("DECREMENT"),
   });
 
   return (

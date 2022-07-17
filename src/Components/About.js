@@ -19,6 +19,19 @@ const About = () => {
         and CSS preprocessors.
       </p>
       <br />
+      <br />
+      <h3 className="color-scheme">Passions/Hobbies:</h3>
+      <p>
+        Coding, Reading,
+        <br />
+        Self-Improvment,
+        <br />
+        Traveling, Sports,
+        <br />
+        Gaming.
+      </p>
+      <br />
+      <br />
       <span className="color-scheme">Age:</span> 22
       <br />
       <br />
@@ -38,22 +51,12 @@ const About = () => {
       IonitaCosminValentin@gmail.com
       <br />
       <br />
-      <span className="color-scheme">Values:</span>
+      {/* <span className="color-scheme">Values:</span>
       <p className="default">
         Loyality, Compassion, <br /> Kindness, Determination, Trustworthiness,
         Appreciation.
       </p>
-      <br />
-      <span className="color-scheme">Passions/Hobbies:</span>
-      <p className="default">
-        Coding, Reading,
-        <br />
-        Self-Improvment, Traveling,
-        <br />
-        Sports, Gaming.
-      </p>
-      <br />
-      <br />
+      <br />*/}
     </div>
   );
 };
