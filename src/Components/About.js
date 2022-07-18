@@ -1,5 +1,4 @@
 import React from "react";
-import "../Css/About.scss";
 
 const About = () => {
   return (
@@ -15,8 +14,9 @@ const About = () => {
         I am a quick and dedicated person, focused on personal and professional
         growth, with an inclination for problem-solving and computer science, a
         self-taught front-end developer with over two years of experience
-        writing JavaScript, HTML, CSS, and more than a year using React, Redux,
-        and CSS preprocessors.
+        writing <span>JavaScript, HTML, CSS</span>, and more than a year using{" "}
+        <span>React, Redux</span>, and
+        <span> CSS preprocessors.</span>
       </p>
       <br />
       <br />
@@ -24,11 +24,9 @@ const About = () => {
       <p>
         Coding, Reading,
         <br />
-        Self-Improvment,
+        Self-Improvment, Traveling,
         <br />
-        Traveling, Sports,
-        <br />
-        Gaming.
+        Sports, Gaming.
       </p>
       <br />
       <br />
@@ -51,12 +49,6 @@ const About = () => {
       IonitaCosminValentin@gmail.com
       <br />
       <br />
-      {/* <span className="color-scheme">Values:</span>
-      <p className="default">
-        Loyality, Compassion, <br /> Kindness, Determination, Trustworthiness,
-        Appreciation.
-      </p>
-      <br />*/}
     </div>
   );
 };

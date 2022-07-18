@@ -8,12 +8,12 @@ import Burger from "./Components/Constants/Burger";
 import Resume from "./Components/Resume";
 
 function App() {
-  const [pageId, setPageId] = useState(0);
+  const [pageId, setPageId] = useState(2);
   const pages = [<Intro />, <About />, <Resume />];
 
   const changePage = (action) => {
     if (action === "INCREMENT") {
-      if (pageId + 1 >= pages.length) return setPageId(0);
+      if (pageId >= pages.length - 1) return setPageId(0);
       return setPageId(pageId + 1);
     }
     if (pageId <= 0) {
@@ -33,13 +33,12 @@ function App() {
   });
 
   return (
-    <div className="App">
+    <div
+      className="App"
+      style={{ animationName: selectAnimation(), animationDuration: "1s" }}
+    >
       <Burger />
-      <div
-        className="content"
-        style={{ animationName: selectAnimation(), animationDuration: "1s" }}
-        {...handlers}
-      >
+      <div className="content" {...handlers}>
         {pages[pageId]}
       </div>
 

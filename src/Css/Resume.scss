@@ -1,0 +1,11 @@
+@use "./variables";
+
+.resume {
+  span {
+    color: rgb(171, 171, 171);
+    font-style: italic;
+  }
+  p {
+    font-weight: 600;
+  }
+}
