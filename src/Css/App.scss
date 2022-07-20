@@ -95,6 +95,19 @@ body {
   }
 }
 
+.resume {
+  span {
+    color: rgb(171, 171, 171);
+    font-style: italic;
+  }
+  p {
+    font-weight: 600;
+  }
+  em {
+    font-style: normal;
+  }
+}
+
 .color-scheme {
   color: variables.$main;
 }
@@ -107,8 +120,10 @@ body {
 
 .underline-main {
   text-decoration: underline variables.$main 2px;
+  text-decoration-style: double;
 }
 
 .underline-second {
   text-decoration: underline variables.$second 2px;
+  text-decoration-style: double;
 }
