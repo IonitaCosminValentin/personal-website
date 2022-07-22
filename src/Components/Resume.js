@@ -47,13 +47,49 @@ const Resume = () => {
         <br />
         <li>
           <h2 className="underline-main">Languages</h2>
-          Romanian - Native <br /> English - Proficent
+          <p>
+            Romanian - Native <br /> English - Proficent
+          </p>
         </li>
         <br />
         <br />
         <li>
           <h2 className="underline-main">Skills</h2>
-          JavaScript/HTML/CSS <br /> React <br /> Redux <br /> Web Design
+          <div className="skill-tree">
+            <div className="skill-text">
+              JavaScript/HTML/CSS <span className="percent">90%</span>
+            </div>
+            <div className="skill-bar">
+              <div className="skill-level" style={{ width: "90%" }}></div>
+            </div>
+          </div>
+          <br />
+          <div className="skill-tree">
+            <div className="skill-text">
+              React <span className="percent">80%</span>
+            </div>
+            <div className="skill-bar">
+              <div className="skill-level" style={{ width: "80%" }}></div>
+            </div>
+          </div>
+          <br />
+          <div className="skill-tree">
+            <div className="skill-text">
+              Redux <span className="percent">60%</span>
+            </div>
+            <div className="skill-bar">
+              <div className="skill-level" style={{ width: "60%" }}></div>
+            </div>
+          </div>
+          <br />
+          <div className="skill-tree">
+            <div className="skill-text">
+              Web Design <span className="percent">80%</span>
+            </div>
+            <div className="skill-bar">
+              <div className="skill-level" style={{ width: "80%" }}></div>
+            </div>
+          </div>
           <br />
           <br />
         </li>

@@ -6,10 +6,11 @@ import About from "./Components/About";
 import Navigation from "./Components/Constants/Navigation";
 import Burger from "./Components/Constants/Burger";
 import Resume from "./Components/Resume";
+import Projects from "./Components/Projects";
 
 function App() {
   const [pageId, setPageId] = useState(2);
-  const pages = [<Intro />, <About />, <Resume />];
+  const pages = [<Intro />, <About />, <Resume />, <Projects />];
 
   const changePage = (action) => {
     if (action === "INCREMENT") {
