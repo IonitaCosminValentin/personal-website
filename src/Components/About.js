@@ -5,6 +5,7 @@ const About = () => {
     <div className="about">
       <br />
       <br />
+      <br />
       <h1>
         About <span className="color-scheme">Me</span>
       </h1>

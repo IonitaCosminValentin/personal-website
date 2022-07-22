@@ -76,7 +76,6 @@ body {
 }
 
 .about {
-  font-size: 15px;
   min-height: 100vh;
 
   color: rgb(221, 221, 221);
@@ -131,6 +130,22 @@ body {
   }
 }
 
+.projects {
+  min-height: 100vh;
+  img {
+    width: 100%;
+  }
+  a {
+    font-size: 19px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-decoration: underline 2px variables.$main;
+  }
+  .github {
+    font-size: 15px;
+  }
+}
+
 .color-scheme {
   color: variables.$main;
 }
@@ -143,10 +158,8 @@ body {
 
 .underline-main {
   text-decoration: underline variables.$main 2px;
-  text-decoration-style: double;
 }
 
 .underline-second {
   text-decoration: underline variables.$second 2px;
-  text-decoration-style: double;
 }
