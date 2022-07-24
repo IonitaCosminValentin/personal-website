@@ -10,7 +10,7 @@ import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
 
 function App() {
-  const [pageId, setPageId] = useState(3);
+  const [pageId, setPageId] = useState(4);
   const pages = [<Intro />, <About />, <Resume />, <Projects />, <Contact />];
 
   const changePage = (action) => {

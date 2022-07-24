@@ -1,5 +1,7 @@
-@use "./variables";
 @use "./Animations";
+
+$main: #ffb836;
+$second: #1c79f0;
 
 * {
   margin: 0;
@@ -25,6 +27,7 @@ body {
 }
 
 .navigation {
+  min-height: 100px;
   position: fixed;
   top: 81%;
   right: 5%;
@@ -38,7 +41,7 @@ body {
   width: 13%;
   height: 15vh;
 
-  border: 2px solid variables.$second;
+  border: 2px solid $second;
   border-radius: 30px;
 
   button {
@@ -126,7 +129,7 @@ body {
   .skill-level {
     border-radius: 10px;
     height: 100%;
-    background-color: variables.$second;
+    background-color: $second;
   }
 }
 
@@ -139,27 +142,77 @@ body {
     font-size: 19px;
     color: rgb(255, 255, 255);
     font-weight: bold;
-    text-decoration: underline 2px variables.$main;
+    text-decoration: underline 2px $main;
   }
   .github {
     font-size: 15px;
   }
 }
 
+.contact {
+  min-height: 100vh;
+
+  form {
+    input {
+      border: 1px solid white;
+      font-size: 15px;
+
+      height: 50px;
+      width: 100%;
+
+      border-radius: 5px;
+      margin-top: 5%;
+
+      background-color: transparent;
+      color: white;
+    }
+
+    ::placeholder {
+      color: white;
+      text-align: center;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-style: italic;
+    }
+    .submit {
+      width: 50%;
+      margin-left: 25%;
+    }
+  }
+
+  .message {
+    border: 1px solid white;
+    font-size: 15px;
+    margin-top: 5%;
+    border-radius: 5px;
+    background-color: transparent;
+    width: 100%;
+    height: 100px;
+    color: white;
+  }
+  .message::placeholder {
+    line-height: 90px;
+  }
+
+  .status {
+    color: $main;
+    margin: 5% 0 5% 0;
+  }
+}
+
 .color-scheme {
-  color: variables.$main;
+  color: $main;
 }
 .color-scheme-second {
-  color: variables.$second;
+  color: $second;
 }
 .indent {
   text-indent: 10%;
 }
 
 .underline-main {
-  text-decoration: underline variables.$main 2px;
+  text-decoration: underline $main 2px;
 }
 
 .underline-second {
-  text-decoration: underline variables.$second 2px;
+  text-decoration: underline $second 2px;
 }
