@@ -33,12 +33,15 @@ const Contact = () => {
         }}
       >
         <h4 className="status">{status}</h4>
-
-        <label>Name</label>
+        <label>Name:</label>
         <input type="text" name="user_name" placeholder="Enter Your Name" />
-        <label>Email</label>
+        <br />
+        <br />
+        <label>Email:</label>
         <input type="email" name="user_email" placeholder="Enter Your Email" />
-        <label>Message</label>
+        <br />
+        <br />
+        <label>Message:</label>
         <textarea
           type="text"
           name="message"

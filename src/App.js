@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useSwipeable } from "react-swipeable";
 import "./Css/App.scss";
+import "./Css/Animation.scss";
 import Intro from "./Components/Intro";
 import About from "./Components/About";
 import Navigation from "./Components/Constants/Navigation";
@@ -10,35 +11,43 @@ import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
 
 function App() {
-  const [pageId, setPageId] = useState(4);
+  const [pageId, setPageId] = useState(0);
   const pages = [<Intro />, <About />, <Resume />, <Projects />, <Contact />];
+  let transitionElement = document.querySelector(".transition-element");
 
-  const changePage = (action) => {
-    if (action === "INCREMENT") {
-      if (pageId >= pages.length - 1) return setPageId(0);
-      return setPageId(pageId + 1);
-    }
-    if (pageId <= 0) {
-      return setPageId(pages.length - 1);
-    }
-
-    return setPageId(pageId - 1);
+  const randomAnimation = () => {
+    return "transition" + Math.floor(Math.random() * 10);
   };
 
-  const selectAnimation = () => {
-    return "Animation" + Math.floor(Math.random() * 10);
+  window.onload = () => {
+    transitionElement.classList.add(randomAnimation());
+    transitionElement.classList.remove("active");
+  };
+
+  const changePage = (action) => {
+    transitionElement.classList.add("active");
+
+    setTimeout(() => {
+      transitionElement.classList.remove("active");
+
+      if (action === "INCREMENT") {
+        if (pageId >= pages.length - 1) return setPageId(0);
+        return setPageId(pageId + 1);
+      }
+      if (pageId <= 0) {
+        return setPageId(pages.length - 1);
+      }
+
+      return setPageId(pageId - 1);
+    }, 1000);
   };
 
   const handlers = useSwipeable({
     onSwipedLeft: () => changePage("INCREMENT"),
     onSwipedRight: () => changePage("DECREMENT"),
   });
-
   return (
-    <div
-      className="App"
-      style={{ animationName: selectAnimation(), animationDuration: "1s" }}
-    >
+    <div className="App">
       <Burger />
       <div className="content" {...handlers}>
         {pages[pageId]}

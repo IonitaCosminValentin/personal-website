@@ -1,0 +1,96 @@
+.transition-element {
+  background-color: #1c79f0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.transition1 {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.transition1.active {
+  opacity: 1;
+  pointer-events: none;
+}
+
+.transition2 {
+  top: 100%;
+  transition: top 0.5s ease;
+}
+.transition2.active {
+  top: 0;
+}
+
+.transition3 {
+  bottom: 100%;
+  transition: bottom 0.5s ease;
+}
+.transition3.active {
+  bottom: 0;
+}
+
+.transition4 {
+  left: 100%;
+  transition: left 0.5s ease;
+}
+.transition4.active {
+  left: 0;
+}
+
+.transition5 {
+  right: 100%;
+  transition: right 0.5s ease;
+}
+.transition5.active {
+  right: 0;
+}
+
+.transition6 {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.transition6.active {
+  opacity: 1;
+  pointer-events: none;
+}
+.transition7 {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.transition7.active {
+  opacity: 1;
+  pointer-events: none;
+}
+.transition8 {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.transition8.active {
+  opacity: 1;
+  pointer-events: none;
+}
+.transition9 {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.transition9.active {
+  opacity: 1;
+  pointer-events: none;
+}
+.transition10 {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.transition10.active {
+  opacity: 1;
+  pointer-events: none;
+}
