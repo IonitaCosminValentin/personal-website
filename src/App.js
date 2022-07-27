@@ -25,13 +25,14 @@ function App() {
     transitionElement.classList.remove("active");
   }, [transitionElement]);
 
-  const changePage = (action) => {
+  const changePage = (id) => {
     transitionElement.classList.add("active");
 
     setTimeout(() => {
       transitionElement.classList.remove("active");
+      console.log(pageId);
 
-      if (action === "INCREMENT") {
+      if (id >= 1) {
         if (pageId >= pages.length - 1) return setPageId(0);
         return setPageId(pageId + 1);
       }
@@ -39,17 +40,30 @@ function App() {
         return setPageId(pages.length - 1);
       }
 
-      return setPageId(pageId - 1);
+      return setPageId(pageId + id);
     }, 500);
   };
 
   const handlers = useSwipeable({
-    onSwipedLeft: () => changePage("INCREMENT"),
-    onSwipedRight: () => changePage("DECREMENT"),
+    onSwipedLeft: () => changePage(1),
+    onSwipedRight: () => changePage(-1),
   });
+
   return (
     <div className="App">
-      <Burger />
+      <Burger
+        openBurger={() => {
+          let burger = document.getElementsByClassName("burger")[0];
+          if (burger.classList.contains("open"))
+            return burger.classList.remove("open");
+          burger.classList.add("open");
+        }}
+        setPage={(id) => {
+          let burger = document.getElementsByClassName("burger")[0];
+          setPageId(id);
+          burger.classList.remove("open");
+        }}
+      />
       <div className="content" {...handlers}>
         {pages[pageId]}
       </div>

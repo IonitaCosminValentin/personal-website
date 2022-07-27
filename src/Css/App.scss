@@ -47,25 +47,44 @@ body {
     background-color: transparent;
   }
 }
-
 .burger {
-  background-color: $second;
+  border: 2px solid $second;
   position: fixed;
   top: 2%;
   right: 4.5%;
-
-  width: 15%;
-  height: 7%;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 60px;
+  height: 60px;
 
   border-radius: 50%;
+  transition: all 0.5s ease;
+
+  .pages {
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: underline;
+    line-height: 50px;
+  }
 
   img {
-    width: 50%;
-    height: 40%;
+    width: 35px;
+    position: fixed;
+    top: 4%;
+    right: 7.5%;
+  }
+}
+.burger.open {
+  background-color: $second;
+  width: 80%;
+  height: 75%;
+  border-radius: 10px;
+  .pages {
+    display: flex;
   }
 }
 
