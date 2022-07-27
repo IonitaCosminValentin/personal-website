@@ -48,6 +48,27 @@ body {
   }
 }
 
+.burger {
+  background-color: $second;
+  position: fixed;
+  top: 2%;
+  right: 4.5%;
+
+  width: 15%;
+  height: 7%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  img {
+    width: 50%;
+    height: 40%;
+  }
+}
+
 .Intro {
   min-height: 100vh;
 

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useSwipeable } from "react-swipeable";
 import "./Css/App.scss";
 import "./Css/Animation.scss";
@@ -19,10 +19,11 @@ function App() {
     return "transition" + Math.floor(Math.random() * 10);
   };
 
-  window.onload = () => {
+  useEffect(() => {
     transitionElement.classList.add(randomAnimation());
+    transitionElement.classList.add("active");
     transitionElement.classList.remove("active");
-  };
+  }, [transitionElement]);
 
   const changePage = (action) => {
     transitionElement.classList.add("active");
@@ -39,7 +40,7 @@ function App() {
       }
 
       return setPageId(pageId - 1);
-    }, 1000);
+    }, 500);
   };
 
   const handlers = useSwipeable({
