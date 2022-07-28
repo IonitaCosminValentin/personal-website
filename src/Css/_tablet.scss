@@ -1,0 +1,58 @@
+$main: #ffb836;
+$second: #cf2158;
+
+@media (min-width: 481px) {
+  .content {
+    font-size: 20px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .navigation {
+    min-height: 150px;
+  }
+  .burger {
+    span {
+      margin: 2%;
+    }
+  }
+  .burger.open {
+    width: 96%;
+    height: 15%;
+    .pages {
+      flex-direction: row;
+    }
+  }
+  .intro {
+    font-size: 25px;
+
+    h1 {
+      font-size: 70px;
+    }
+  }
+  .projects {
+    a {
+      font-size: 25px;
+    }
+  }
+  .contact {
+    form {
+      font-size: 25px;
+    }
+    input {
+      min-height: 75px;
+      font-size: 20px;
+    }
+
+    .message {
+      min-height: 150px;
+      font-size: 25px;
+    }
+    .message:focus {
+      outline: 1px solid $second;
+    }
+    .message::placeholder {
+      line-height: 150px;
+    }
+  }
+}

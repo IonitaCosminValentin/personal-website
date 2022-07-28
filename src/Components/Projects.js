@@ -10,7 +10,10 @@ const Projects = () => {
       <br />
       <br />
       <li>
-        <a href="https://ionitacosminvalentin.github.io/A-Star-Pathfinding-Algorithm/">
+        <a
+          href="https://ionitacosminvalentin.github.io/A-Star-Pathfinding-Algorithm/"
+          className="color-scheme underline-main"
+        >
           A* Algorithm
         </a>
         <br />
@@ -19,7 +22,7 @@ const Projects = () => {
         <br />
         <a
           href="https://github.com/IonitaCosminValentin/A-Star-Pathfinding-Algorithm"
-          className="github"
+          className="color-scheme"
         >
           See Github page
         </a>

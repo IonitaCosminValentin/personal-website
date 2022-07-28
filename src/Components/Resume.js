@@ -13,7 +13,7 @@ const Resume = () => {
       <br />
       <ul>
         <li>
-          <h2 className="underline-main">Education</h2>
+          <h2 className="color-scheme">Education</h2>
           <br />
           <span>2019</span>
           <br /> <span>Iordache Golescu, Gaesti.</span>
@@ -27,7 +27,7 @@ const Resume = () => {
         <br />
         <br />
         <li>
-          <h2 className="underline-main">Experience</h2>
+          <h2 className="color-scheme">Experience</h2>
           <br />
           <span>2020</span>
           <br />
@@ -46,7 +46,7 @@ const Resume = () => {
         <br />
         <br />
         <li>
-          <h2 className="underline-main">Languages</h2>
+          <h2 className="color-scheme">Languages</h2>
           <p>
             Romanian - Native <br /> English - Proficent
           </p>
@@ -54,7 +54,7 @@ const Resume = () => {
         <br />
         <br />
         <li>
-          <h2 className="underline-main">Skills</h2>
+          <h2 className="color-scheme">Skills</h2>
           <div className="skill-tree">
             <div className="skill-text">
               JavaScript/HTML/CSS <span className="percent">90%</span>
@@ -94,7 +94,7 @@ const Resume = () => {
           <br />
         </li>
         <li>
-          <h2 className="underline-main">Other Strengths</h2>
+          <h2 className="color-scheme">Other Strengths</h2>
           <p>
             Team Player <br /> Outsite the box thinking <br /> Always positive
             <br /> Curious <br /> Passionate <br />

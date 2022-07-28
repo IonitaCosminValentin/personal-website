@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useSwipeable } from "react-swipeable";
 import "./Css/App.scss";
 import "./Css/Animation.scss";
+import "./Css/_tablet.scss";
 import Intro from "./Components/Intro";
 import About from "./Components/About";
 import Navigation from "./Components/Constants/Navigation";
@@ -30,7 +31,6 @@ function App() {
 
     setTimeout(() => {
       transitionElement.classList.remove("active");
-      console.log(pageId);
 
       if (id >= 1) {
         if (pageId >= pages.length - 1) return setPageId(0);
