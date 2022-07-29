@@ -33,7 +33,6 @@ function App() {
   }, [transitionElement]);
 
   const changePage = (id) => {
-    if (isDesktop) return;
     transitionElement.classList.add("active");
 
     setTimeout(() => {
@@ -65,7 +64,7 @@ function App() {
             return burger.classList.remove("open");
           burger.classList.add("open");
         }}
-        setPage={(id) => {
+        setPage={(e, id) => {
           let burger = document.getElementsByClassName("burger")[0];
           setPageId(id);
           burger.classList.remove("open");

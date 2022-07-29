@@ -93,14 +93,17 @@ $second: #cf2158;
       flex-direction: row;
       justify-content: space-around;
       align-items: center;
+      border-bottom: 2px solid $main;
+
       a {
         font-size: 20px;
         color: rgb(158, 158, 158);
         text-decoration: none;
         transition: all 0.5s ease;
       }
+
       a:hover {
-        color: $second;
+        color: $main;
         text-decoration: underline;
       }
     }

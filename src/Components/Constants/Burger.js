@@ -32,8 +32,8 @@ const Burger = ({ openBurger, setPage }) => {
         </a>
         <a
           href="#projects"
-          onClick={() => {
-            setPage(3);
+          onClick={(e) => {
+            setPage(e, 3);
           }}
         >
           Projects
