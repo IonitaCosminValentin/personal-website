@@ -31,9 +31,13 @@ $second: #cf2158;
     }
   }
   .about {
+    display: flex;
+    flex-direction: column;
+    h1 {
+      margin: 17% 0 10% 0;
+    }
     .others {
       display: grid;
-      grid-auto-columns: 2;
     }
   }
   .projects {

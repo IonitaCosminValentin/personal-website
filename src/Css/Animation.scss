@@ -92,12 +92,12 @@
   transition: top 0.5s ease;
 }
 .transition9 {
-  bottom: 0%;
-  transition: bottom 0.5s ease;
+  top: 100%;
+  transition: top 0.5s ease;
 }
 .transition9.active {
-  bottom: 100%;
-  transition: bottom 0.5s ease;
+  top: 0%;
+  transition: top 0.5s ease;
 }
 
 .transition10 {
