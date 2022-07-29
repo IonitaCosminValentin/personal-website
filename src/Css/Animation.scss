@@ -1,6 +1,7 @@
 .transition-element {
   background-color: #ffb836;
   position: fixed;
+  height: 200vh;
   top: 0;
   right: 0;
   bottom: 0;
@@ -9,8 +10,8 @@
 }
 
 .transition0 {
-  transition: opacity 0.5s ease;
   opacity: 0;
+  transition: opacity 0.5s ease;
 }
 
 .transition0.active {
@@ -19,34 +20,31 @@
 }
 
 .transition1 {
-  transition: opacity 0.5s ease;
-
   opacity: 0;
+  transition: opacity 0.5s ease;
 }
 
 .transition1.active {
-  transition: opacity 0.5s ease;
-
   opacity: 1;
+  transition: opacity 0.5s ease;
 }
 
 .transition2 {
-  transition: top 0.5s ease-in;
   top: 100%;
+  transition: top 0.5s ease-in;
 }
 .transition2.active {
-  transition: top 0.5s ease;
-
   top: 0;
+  transition: top 0.5s ease;
 }
 
 .transition3 {
-  transition: bottom 0.5s ease-in;
-  bottom: 100%;
+  top: 100%;
+  transition: top 0.5s ease;
 }
 .transition3.active {
-  transition: bottom 0.5s ease;
-  bottom: 0;
+  top: 0%;
+  transition: top 0.5s ease;
 }
 
 .transition4 {
@@ -94,11 +92,11 @@
   transition: top 0.5s ease;
 }
 .transition9 {
-  bottom: 100%;
+  bottom: 0%;
   transition: bottom 0.5s ease;
 }
 .transition9.active {
-  bottom: 0;
+  bottom: 100%;
   transition: bottom 0.5s ease;
 }
 

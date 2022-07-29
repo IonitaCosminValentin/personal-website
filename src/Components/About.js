@@ -19,36 +19,40 @@ const About = () => {
         <span>React, Redux</span>, and
         <span> CSS preprocessors.</span>
       </p>
-      <br />
-      <br />
-      <h3 className="color-scheme">Passions/Hobbies:</h3>
-      <p>
-        Coding, Reading,
-        <br />
-        Self-Improvment, Traveling,
-        <br />
-        Sports, Gaming.
-      </p>
-      <br />
-      <br />
-      <span className="color-scheme">Age:</span> 22
-      <br />
-      <br />
-      <span className="color-scheme">Country:</span> Romania
-      <br />
-      <br />
-      <span className="color-scheme">Phone:</span> +40721 732 718
-      <br />
-      <br />
-      <span className="color-scheme">Adress:</span>
-      <br />
-      Uliesti, Str. Plopilor, Nr 12
-      <br />
-      <br />
-      <span className="color-scheme">Email:</span>
-      <br />
-      IonitaCosminValentin@gmail.com
-      <br />
+      <div className="others">
+        <div>
+          <h3 className="color-scheme">Passions/Hobbies:</h3>
+          <p>
+            Coding, Reading,
+            <br />
+            Self-Improvment, Traveling,
+            <br />
+            Sports, Gaming.
+          </p>
+        </div>
+
+        <div>
+          <span className="color-scheme">Age:</span> 22
+        </div>
+
+        <div>
+          <span className="color-scheme">Country:</span> Romania
+        </div>
+
+        <div>
+          <span className="color-scheme">Phone:</span> +40721 732 718
+        </div>
+
+        <div>
+          <span className="color-scheme">Adress:</span> Uliesti, Str. Plopilor,
+          Nr 12
+        </div>
+
+        <div>
+          <span className="color-scheme">Email:</span>
+          <span className="email">cosminvalentinionita@gmail.com</span>
+        </div>
+      </div>
       <br />
     </div>
   );

@@ -30,6 +30,12 @@ $second: #cf2158;
       font-size: 70px;
     }
   }
+  .about {
+    .others {
+      display: grid;
+      grid-auto-columns: 2;
+    }
+  }
   .projects {
     a {
       font-size: 25px;

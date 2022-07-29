@@ -18,7 +18,7 @@ body {
   background-color: rgb(35, 35, 35);
   .content {
     min-height: 100vh;
-    width: 63%;
+    width: 60%;
     margin: auto;
   }
 }
@@ -28,7 +28,7 @@ body {
   min-width: 50px;
   position: fixed;
   bottom: 3%;
-  right: 5%;
+  right: 10px;
 
   display: flex;
   flex-direction: column;
@@ -42,18 +42,18 @@ body {
 
   button {
     font-size: 40px;
-    color: rgb(186, 186, 186);
+    color: rgb(255, 255, 255);
     border: none;
     background-color: transparent;
   }
 }
 .burger {
-  border: 2px solid $second;
+  border: 3px solid $second;
   position: fixed;
   top: 17px;
-  right: 17px;
-  width: 60px;
-  height: 60px;
+  right: 10px;
+  width: 55px;
+  height: 55px;
 
   border-radius: 50%;
 
@@ -72,11 +72,11 @@ body {
   }
 
   img {
-    width: 30px;
-    height: 30px;
+    width: 27px;
+    height: 27px;
     position: fixed;
     top: 32px;
-    right: 31px;
+    right: 23px;
   }
 }
 .burger.open {
@@ -124,6 +124,14 @@ body {
   span {
     font-weight: bold;
   }
+  div {
+    margin-top: 20px;
+  }
+  .email {
+    display: flex;
+    font-weight: normal;
+    flex-wrap: wrap;
+  }
 }
 
 .resume {
@@ -146,6 +154,7 @@ body {
 
     .skill-text {
       display: flex;
+      font-weight: bold;
       justify-content: space-between;
     }
   }
@@ -201,14 +210,16 @@ body {
       margin-left: 25%;
     }
     .submit:hover {
-      background-color: $second;
+      background-color: $main;
+      transition: all 0.3s ease;
+      color: black;
     }
     input:focus {
-      outline: 1px solid $second;
+      outline: 1px solid $main;
     }
 
     .message:focus {
-      outline: 1px solid $second;
+      outline: 1px solid $main;
     }
   }
 

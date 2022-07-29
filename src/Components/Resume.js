@@ -102,6 +102,8 @@ const Resume = () => {
           </p>
         </li>
       </ul>
+      <br />
+      <br />
     </div>
   );
 };
