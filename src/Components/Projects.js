@@ -2,7 +2,7 @@ import React from "react";
 import astar from "../Assets/astar.PNG";
 const Projects = () => {
   return (
-    <div className="projects">
+    <div className="projects" id="projects">
       <br />
       <br />
       <br />

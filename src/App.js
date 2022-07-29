@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useSwipeable } from "react-swipeable";
 import "./Css/App.scss";
 import "./Css/Animation.scss";
-import "./Css/_tablet.scss";
+import "./Css/_breakpoints.scss";
 import Intro from "./Components/Intro";
 import About from "./Components/About";
 import Navigation from "./Components/Constants/Navigation";
@@ -13,9 +13,15 @@ import Contact from "./Components/Contact";
 
 function App() {
   const [pageId, setPageId] = useState(0);
-  const pages = [<Intro />, <About />, <Resume />, <Projects />, <Contact />];
+  const pages = [
+    <Intro key={0} />,
+    <About key={1} />,
+    <Resume key={2} />,
+    <Projects key={3} />,
+    <Contact key={4} />,
+  ];
   let transitionElement = document.querySelector(".transition-element");
-
+  let isDesktop = window.screen.width >= 768;
   const randomAnimation = () => {
     return "transition" + Math.floor(Math.random() * 10);
   };
@@ -27,6 +33,7 @@ function App() {
   }, [transitionElement]);
 
   const changePage = (id) => {
+    if (isDesktop) return;
     transitionElement.classList.add("active");
 
     setTimeout(() => {
@@ -65,7 +72,7 @@ function App() {
         }}
       />
       <div className="content" {...handlers}>
-        {pages[pageId]}
+        {isDesktop ? pages : pages[pageId]}
       </div>
 
       <Navigation changePage={changePage} />

@@ -1,7 +1,7 @@
 $main: #ffb836;
 $second: #cf2158;
 
-@media (min-width: 481px) {
+@media only screen and (min-width: 481px) {
   .content {
     font-size: 20px;
     width: 100%;
@@ -63,6 +63,46 @@ $second: #cf2158;
     }
     .message::placeholder {
       line-height: 150px;
+    }
+  }
+}
+@media only screen and (min-width: 769px) {
+  .navigation {
+    display: none;
+  }
+  .burger {
+    width: 98%;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+
+    img {
+      display: none;
+    }
+    .pages {
+      width: 50%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      a {
+        font-size: 20px;
+        color: rgb(158, 158, 158);
+        text-decoration: none;
+        transition: all 0.5s ease;
+      }
+      a:hover {
+        color: $second;
+        text-decoration: underline;
+      }
     }
   }
 }

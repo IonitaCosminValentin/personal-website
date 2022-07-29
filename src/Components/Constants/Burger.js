@@ -6,41 +6,46 @@ const Burger = ({ openBurger, setPage }) => {
     <div className="burger">
       <img src={burgerIcon} alt="" onClick={openBurger} />
       <div className="pages">
-        <span
+        <a
+          href="#intro"
           onClick={() => {
             setPage(0);
           }}
         >
           Intro
-        </span>
-        <span
+        </a>
+        <a
+          href="#about"
           onClick={() => {
             setPage(1);
           }}
         >
           About
-        </span>
-        <span
+        </a>
+        <a
+          href="#resume"
           onClick={() => {
             setPage(2);
           }}
         >
           Resume
-        </span>
-        <span
+        </a>
+        <a
+          href="#projects"
           onClick={() => {
             setPage(3);
           }}
         >
           Projects
-        </span>
-        <span
+        </a>
+        <a
+          href="#contact"
           onClick={() => {
             setPage(4);
           }}
         >
           Contact
-        </span>
+        </a>
       </div>
     </div>
   );
