@@ -21,7 +21,7 @@ function App() {
     <Contact key={4} />,
   ];
   let transitionElement = document.querySelector(".transition-element");
-  let isDesktop = window.screen.width >= 768;
+  let isDesktop = window.screen.width >= 1025;
   const randomAnimation = () => {
     return "transition" + Math.floor(Math.random() * 10);
   };

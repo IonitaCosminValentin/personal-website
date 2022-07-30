@@ -1,4 +1,5 @@
 import React from "react";
+import arrow from "../Assets/arrow.png";
 
 const Intro = () => {
   return (
@@ -8,6 +9,10 @@ const Intro = () => {
       <h1>I'm Vali.</h1>
 
       <p>Junior Front-End Developer</p>
+      <a href="#about" className="arrow">
+        <span>SCROLL</span>
+        <img src={arrow} alt="" />
+      </a>
     </div>
   );
 };

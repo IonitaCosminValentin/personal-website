@@ -1,6 +1,26 @@
-$main: #ffb836;
+$main: hsl(39, 100%, 61%);
 $second: #cf2158;
 
+@keyframes arrow {
+  0% {
+    top: 50%;
+  }
+  25% {
+    top: 40%;
+  }
+  50% {
+    top: 50%;
+  }
+
+  75% {
+    top: 40%;
+  }
+  100% {
+    top: 50%;
+  }
+}
+
+//tablet breakpoint
 @media only screen and (min-width: 481px) {
   .content {
     font-size: 20px;
@@ -23,19 +43,18 @@ $second: #cf2158;
       flex-direction: row;
     }
   }
+
   .intro {
     font-size: 25px;
 
     h1 {
-      font-size: 70px;
+      font-size: 40px;
     }
   }
   .about {
     display: flex;
     flex-direction: column;
-    h1 {
-      margin: 17% 0 10% 0;
-    }
+    margin-top: 13%;
     .others {
       display: grid;
     }
@@ -66,7 +85,9 @@ $second: #cf2158;
     }
   }
 }
-@media only screen and (min-width: 769px) {
+
+//desktop breakpoint
+@media only screen and (min-width: 1025px) {
   .navigation {
     display: none;
   }
@@ -106,6 +127,40 @@ $second: #cf2158;
         color: $main;
         text-decoration: underline;
       }
+    }
+  }
+
+  .intro {
+    margin-top: 10%;
+    min-height: 60vh;
+    .arrow {
+      width: 5%;
+      display: initial;
+      position: relative;
+
+      text-align: center;
+      text-decoration: none;
+      color: $main;
+      font-size: 12px;
+
+      animation-duration: 5s;
+      animation-name: arrow;
+      animation-iteration-count: infinite;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .about {
+    margin-top: 15%;
+    padding-top: 2%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+
+    .others {
+      padding-top: 20%;
     }
   }
 }

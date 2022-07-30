@@ -114,10 +114,14 @@ body {
     color: rgb(158, 158, 158);
     font-style: normal;
   }
+  .arrow {
+    display: none;
+  }
 }
 
 .about {
   color: rgb(221, 221, 221);
+  margin-top: 30%;
   p {
     text-align: justify;
   }
